@@ -1227,3 +1227,58 @@ main::-webkit-scrollbar-thumb{
     color: var(--highlight-color);
     margin: 0 5px;
 }
+
+
+
+/*                    Media Query SECTION                    */
+
+@media (max-width:1200px){
+    .side_bar{
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 30%;
+        z-index: 888;
+        opacity: 0;
+        transition: 0.7s;
+    }
+    .bars{
+        display: block;
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        border: 1px solid var(--border-color);
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+    }
+    .show_side_bar{
+        opacity: 1;
+        left: 0;
+    }
+    .container{
+        width: 100vw;
+    }
+    .content h1 {
+        font-size: 3.2rem;
+        line-height: 3.2rem;
+    }
+    .content .typed_text, .hero_text {
+        font-size: 1.4rem;
+    }
+    .hero_btns button{
+        width: 160px;
+        height: 46px;
+        font-size: 1.1rem;
+    }
+    .hero_btns {
+        gap: 10px;
+    }
+    .user_det {
+        bottom: -12%;
+        left: 4%;
+    }
+}
