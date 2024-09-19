@@ -1055,3 +1055,49 @@ main::-webkit-scrollbar-thumb{
 .view_btn{
     margin: 20px 0; 
 }
+
+
+
+
+/*               Testimonial Section               */
+.testimonial{
+    flex-direction: column;
+}
+
+.testimonial p{
+    color: var(--text-muted);
+    margin: 10px 0;
+}
+
+.testimonialSwiper{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.testimonial_slide{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.testimonial_slide img{
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 100%;
+    background-color: var(--third-color);
+    padding: 10px;
+}
+
+.testimonial_info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.testimonial_info h2{
+    font-weight: 300;
+}
