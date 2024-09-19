@@ -1058,7 +1058,6 @@ main::-webkit-scrollbar-thumb{
 
 
 
-
 /*               Testimonial Section               */
 .testimonial{
     flex-direction: column;
@@ -1100,4 +1099,131 @@ main::-webkit-scrollbar-thumb{
 
 .testimonial_info h2{
     font-weight: 300;
+}
+
+
+/*               Contact Section               */
+.contact{
+    flex-direction: column;
+}
+
+.contact_head {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.contact_head h2{
+    font-weight: 300;
+}
+
+.contact_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.contact_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.contact_box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--background-color);
+    width: 100%;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.contact_box i{
+    font-size: 3rem;
+    width: 80px;
+    height: 80px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_box p{
+    color: var(--text-muted);
+    margin-bottom: 5px;
+}
+
+.contact_box h2{
+    font-weight: 300;
+}
+
+.inputs{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.inputs input{
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: var(--text-color);
+    background-color: transparent;
+    padding-left: 2%;
+    font-size: 1.3rem;
+    border-bottom: 3px solid var(--border-color);
+}
+
+.inputs input:active,
+.inputs input:focus{
+    border-bottom: 3px solid var(--input-focus-border-color);
+}
+
+.inputs input::placeholder{
+    color: var( --placeholder-color) !important;
+}
+
+.submit_btn{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.copyright{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.copyright p{
+    color: var(--text-muted);
+    font-size: 1.4rem;
+    margin-top: 3rem;
+}
+
+.copyright p span{
+    color: var(--highlight-color);
+    margin: 0 5px;
 }
