@@ -1309,3 +1309,51 @@ main::-webkit-scrollbar-thumb{
         text-align: center;
     }
 }
+
+@media (max-width:768px){
+    .side_bar{
+        width: 40%;
+    }
+    .content h1{
+        font-size: 4.4rem;
+    }
+    .headings h1 {
+        font-size: 2rem;
+    }
+    .side_menu {
+        justify-content: center;
+    }
+    .download_btn {
+        width: 240px;
+    }
+    .download_btn i {
+        font-size: 1.5rem;
+        width: 45px;
+        height: 45px;
+    }    
+    .download_btn a {
+        font-size: 1.2rem;
+        padding-left: 15%;
+    }
+    .hero_btns {
+        width: 100%;
+    }
+    .skills_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about_info{
+        gap: 10px;
+    }
+    .education_card::before{
+        left: -4%;
+    }
+    .expreience{
+        transform: translateY(-37px);
+    }
+    .portfolio_cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .contact_container{
+        flex-direction: column;
+    }
+}
