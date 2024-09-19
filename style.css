@@ -226,3 +226,143 @@ img{
 .download_btn:hover a{
     padding-left: 25%;
 }
+
+
+/*   MAIN  */
+
+main{
+    width: 80%;
+    height: 100vh;
+    background-color: #0f141c;
+    overflow-y: scroll;
+}
+
+main::-webkit-scrollbar{
+    width: 5px;
+    background-color: transparent;
+}
+
+main::-webkit-scrollbar-thumb{
+    background-color: var(--highlight-color);
+}
+
+/*  HERO SECTION  */
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10% 2%;
+}
+
+.content{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    color: var(--text-color);
+}
+
+.content h1{
+    font-size: 5rem;
+    line-height: 5rem;
+    font-weight: 500;
+}
+
+.content h1 span{
+    font-weight: 400;
+}
+
+.content .typed_text,.hero_text{
+    font-size: 1.6rem;
+    color: var(--third-color);
+}
+
+.hero_text{
+    margin-left: 6px;
+}
+
+.content p{
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: rgba(131,131,131,1);
+    /* margin-top: 25px; */
+}
+
+.hero_btns{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero_btns button,.view_btn button,.submit_btn button{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 170px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: var(--highlight-color);
+    color: #000;
+    border: none;
+    font-size: 1.3rem;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.hero_btns button:after,.view_btn button::after ,.submit_btn button::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    background-color: var(--third-color);
+    z-index: -1;
+    transition: 0.4s ease;
+}
+
+.hero_btns button:hover:after , .view_btn button:hover::after,.submit_btn button:hover::after{
+    height: 100%;
+}
+
+.btn2{
+    background-color: #ffdb59;
+}
+
+.hero_img{
+    position: relative;
+    width: 55%;
+}
+
+.hero_img-img{
+    border-radius: 8px;
+}
+
+.hero_img .rotate_elem1{
+    position: absolute;
+    top: -7%;
+    left: -7%;
+    width: 80px;
+    height: 80px;
+    animation: rotate 3s infinite forwards linear;
+}
+
+.hero_img .rotate_elem2{
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    width: 50px;
+    height: 50px;
+    animation: rotate 3s infinite forwards linear;
+}
+
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
