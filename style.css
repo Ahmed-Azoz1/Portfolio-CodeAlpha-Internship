@@ -688,3 +688,55 @@ main::-webkit-scrollbar-thumb{
     border-radius: 100%;
     z-index: -1;
 }
+
+
+/*               Design Section               */
+.design_skills{
+    flex-direction: column;
+}
+
+.design_skills_container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.design_skill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 5%;
+    border-radius: 50px;
+}
+
+.skills_info p{
+    font-size: 0.8rem;
+}
+
+.design_skill:nth-child(1){
+    border: 1px solid rgb(2,175,132);
+    background-color: rgba(2,175,132,0.2);
+}
+
+.design_skill:nth-child(2){
+    border: 1px solid rgb(199,79,196);
+    background-color: rgba(199,79,196,0.2);
+}
+
+.design_skill:nth-child(3){
+    border: 1px solid rgb(49,168,255);
+    background-color: rgba(49,169,255,0.2);
+}
+
+.design_skill:nth-child(4){
+    border: 1px solid rgb(205,177,76);
+    background-color: rgba(205,177,76,0.2);
+}
+
+.design_skill:nth-child(5){
+    border: 1px solid rgb(222,47,91);
+    background-color: rgba(222,47,91,0.2);
+}
