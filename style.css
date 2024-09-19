@@ -1282,3 +1282,30 @@ main::-webkit-scrollbar-thumb{
         left: 4%;
     }
 }
+
+@media (max-width:1000px){
+    .side_bar{
+        width: 35%;
+    }
+    .hero{
+        flex-direction: column-reverse;
+    }
+    .content{
+        width: 100%;
+    }
+    .user_det{
+        display: none;
+    }
+    .hero_img{
+        width: 80%;
+    }
+    .education_card{
+        padding-left: 10%;
+    }
+    .design_skills_container{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .copyright p{
+        text-align: center;
+    }
+}
